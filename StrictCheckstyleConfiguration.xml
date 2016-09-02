@@ -12,7 +12,6 @@
   <property name="severity" value="warning"/>
   <module name="TreeWalker">
     <property name="tabWidth" value="4"/>
-    <module name="FileContentsHolder"/>
     <module name="PackageDeclaration">
       <metadata name="net.sf.eclipsecs.core.comment" value="Paquetage obligatoire"/>
       <property name="severity" value="error"/>
@@ -294,10 +293,11 @@
       <property name="max" value="2"/>
     </module>
     <module name="RegexpSinglelineJava">
-      <property name="severity" value="warning"/>
+      <property name="severity" value="ignore"/>
       <property name="format" value="^(?!.*@\w*\().*\&quot;.*\&quot;.*(?&lt;!\$NON-NLS-\d\$)$"/>
       <property name="message" value="Hard Coded String"/>
       <property name="ignoreComments" value="true"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="warning"/>
     </module>
   </module>
   <module name="RegexpHeader">
